@@ -1,0 +1,58 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python build and distribution
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Generated model and intermediate Python data
+# Keep forest_model.h: the ESP32 needs this file.
+# Keep random_forest.joblib if you want the trained model
+# included in the repository.
+# Ignore large intermediate datasets by default.
+data/processed/
+*.npy
+*.pkl
+
+# Local Arduino build artifacts
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.a
+
+# Do not commit credentials or private keys
+*.pem
+*.key
+secrets.h
